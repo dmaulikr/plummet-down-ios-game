@@ -13,7 +13,6 @@
 		6B1FC16919C92BEC00C469D3 /* Star.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1FC16819C92BEC00C469D3 /* Star.m */; };
 		6B34769119DCF3EC00CDA61D /* libFlurry_5.4.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B34769019DCF3EC00CDA61D /* libFlurry_5.4.0.a */; };
 		6B34769319DCFC4B00CDA61D /* RevMobAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B34769219DCFC4B00CDA61D /* RevMobAds.framework */; };
-		6B34769419DCFC6E00CDA61D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB68BAF19DCE4C300D9798C /* StoreKit.framework */; };
 		6B34769519DCFC7600CDA61D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB68BAD19DCE4B200D9798C /* MediaPlayer.framework */; };
 		6B34769619DCFC7E00CDA61D /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB68BAB19DCE49300D9798C /* AdSupport.framework */; };
 		6B3F20D719DA54FA005B68AF /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3F20D619DA54FA005B68AF /* iRate.m */; };
@@ -142,7 +141,6 @@
 		6BB68B9C19DCD89800D9798C /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		6BB68BAB19DCE49300D9798C /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		6BB68BAD19DCE4B200D9798C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		6BB68BAF19DCE4C300D9798C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		6BB68BB119DCE4E800D9798C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		6BB6CD6919CBCE0600DFE819 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameObject.h; path = Source/GameObject.h; sourceTree = "<group>"; };
 		6BB6CD6A19CBCE0600DFE819 /* GameObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameObject.m; path = Source/GameObject.m; sourceTree = "<group>"; };
@@ -192,7 +190,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B34769419DCFC6E00CDA61D /* StoreKit.framework in Frameworks */,
 				6B34769619DCFC7E00CDA61D /* AdSupport.framework in Frameworks */,
 				6B34769519DCFC7600CDA61D /* MediaPlayer.framework in Frameworks */,
 				6B3F20EC19DA5BDE005B68AF /* SystemConfiguration.framework in Frameworks */,
@@ -402,7 +399,6 @@
 				6B34768C19DCF31300CDA61D /* libz.1.1.3.dylib */,
 				6B34769219DCFC4B00CDA61D /* RevMobAds.framework */,
 				6BB68BB119DCE4E800D9798C /* libz.dylib */,
-				6BB68BAF19DCE4C300D9798C /* StoreKit.framework */,
 				6BB68BAD19DCE4B200D9798C /* MediaPlayer.framework */,
 				6BB68BAB19DCE49300D9798C /* AdSupport.framework */,
 				6BB68B9C19DCD89800D9798C /* iAd.framework */,
@@ -486,6 +482,9 @@
 						SystemCapabilities = {
 							com.apple.GameCenter = {
 								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
 							};
 						};
 					};
@@ -716,7 +715,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = PlummetDown;
-				PROVISIONING_PROFILE = "de9a55fa-1815-4d66-8eb7-f15bf7987806";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -726,8 +725,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -756,7 +755,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = PlummetDown;
-				PROVISIONING_PROFILE = "de9a55fa-1815-4d66-8eb7-f15bf7987806";
+				PROVISIONING_PROFILE = "";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

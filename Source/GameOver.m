@@ -26,6 +26,13 @@
         [[ABGameKitHelper sharedHelper] reportScore:[GameObject points] forLeaderboard:@"plummetDown"];
     }
     
+    _score = [CCLabelTTF labelWithString:@"" fontName:@"EarthNormal" fontSize:50];
+    _score.position = ccp(self.boundingBox.size.width / 2, 251);
+    [self addChild:_score];
+    _best = [CCLabelTTF labelWithString:@"" fontName:@"EarthNormal" fontSize:40];
+    _best.position = ccp(self.boundingBox.size.width / 2, 171);
+    [self addChild:_best];
+    
     _btnBack.position = ccp((320 - [[CCDirector sharedDirector] viewSize].width) / 2, _btnBack.position.y);
     _score.string = [NSString stringWithFormat:@"%d", [GameObject points]];
     [[GameData sharedGameData] setBest:[GameObject points]];
