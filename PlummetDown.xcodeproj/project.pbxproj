@@ -11,8 +11,8 @@
 		6B09B54E19DE538D0014F170 /* Boom.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B09B54D19DE538D0014F170 /* Boom.m */; };
 		6B1FC16519C9244100C469D3 /* GamePlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1FC16419C9244100C469D3 /* GamePlay.m */; };
 		6B1FC16919C92BEC00C469D3 /* Star.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1FC16819C92BEC00C469D3 /* Star.m */; };
+		6B335F6E1A6175C80055FBE7 /* RevMobAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B335F6D1A6175C80055FBE7 /* RevMobAds.framework */; };
 		6B34769119DCF3EC00CDA61D /* libFlurry_5.4.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B34769019DCF3EC00CDA61D /* libFlurry_5.4.0.a */; };
-		6B34769319DCFC4B00CDA61D /* RevMobAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B34769219DCFC4B00CDA61D /* RevMobAds.framework */; };
 		6B34769519DCFC7600CDA61D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB68BAD19DCE4B200D9798C /* MediaPlayer.framework */; };
 		6B34769619DCFC7E00CDA61D /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB68BAB19DCE49300D9798C /* AdSupport.framework */; };
 		6B3F20D719DA54FA005B68AF /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3F20D619DA54FA005B68AF /* iRate.m */; };
@@ -112,10 +112,10 @@
 		6B1FC16419C9244100C469D3 /* GamePlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GamePlay.m; path = Source/GamePlay.m; sourceTree = "<group>"; };
 		6B1FC16719C92BEC00C469D3 /* Star.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Star.h; path = Source/Star.h; sourceTree = "<group>"; };
 		6B1FC16819C92BEC00C469D3 /* Star.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Star.m; path = Source/Star.m; sourceTree = "<group>"; };
+		6B335F6D1A6175C80055FBE7 /* RevMobAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RevMobAds.framework; sourceTree = "<group>"; };
 		6B34768C19DCF31300CDA61D /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
 		6B34768F19DCF3EC00CDA61D /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
 		6B34769019DCF3EC00CDA61D /* libFlurry_5.4.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_5.4.0.a; sourceTree = "<group>"; };
-		6B34769219DCFC4B00CDA61D /* RevMobAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RevMobAds.framework; sourceTree = "<group>"; };
 		6B3F20D519DA54FA005B68AF /* iRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iRate.h; path = Source/iRate.h; sourceTree = "<group>"; };
 		6B3F20D619DA54FA005B68AF /* iRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iRate.m; path = Source/iRate.m; sourceTree = "<group>"; };
 		6B3F20EB19DA5BDE005B68AF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -194,13 +194,13 @@
 				6B34769519DCFC7600CDA61D /* MediaPlayer.framework in Frameworks */,
 				6B3F20EC19DA5BDE005B68AF /* SystemConfiguration.framework in Frameworks */,
 				B77F1B3C17B978D7009739AE /* UIKit.framework in Frameworks */,
+				6B335F6E1A6175C80055FBE7 /* RevMobAds.framework in Frameworks */,
 				6B4E55B519DBA219005CF471 /* Security.framework in Frameworks */,
 				B77F1B3E17B978D7009739AE /* Foundation.framework in Frameworks */,
 				B77F1B4017B978D7009739AE /* CoreGraphics.framework in Frameworks */,
 				6B4E55B319DBA20E005CF471 /* CFNetwork.framework in Frameworks */,
 				6B4E55B119DBA202005CF471 /* GameKit.framework in Frameworks */,
 				8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */,
-				6B34769319DCFC4B00CDA61D /* RevMobAds.framework in Frameworks */,
 				B737898A1807642B0076A88C /* libcocos2d.a in Frameworks */,
 				B77F1B3217B978D7009739AE /* QuartzCore.framework in Frameworks */,
 				B77F1B3417B978D7009739AE /* OpenGLES.framework in Frameworks */,
@@ -396,8 +396,8 @@
 		B77F1B3017B978D7009739AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6B335F6D1A6175C80055FBE7 /* RevMobAds.framework */,
 				6B34768C19DCF31300CDA61D /* libz.1.1.3.dylib */,
-				6B34769219DCFC4B00CDA61D /* RevMobAds.framework */,
 				6BB68BB119DCE4E800D9798C /* libz.dylib */,
 				6BB68BAD19DCE4B200D9798C /* MediaPlayer.framework */,
 				6BB68BAB19DCE49300D9798C /* AdSupport.framework */,
@@ -629,7 +629,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Guilherme Oliveira (2FJBLJ54J9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Guilherme Oliveira (2FJBLJ54J9)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -660,7 +661,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Guilherme Oliveira (2FJBLJ54J9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Guilherme Oliveira (2FJBLJ54J9)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					NDEBUG,
